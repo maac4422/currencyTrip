@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		42B5D84A3488D6987A56F085 /* Pods_currency_trip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D00DCA3D1D84480CE892D7 /* Pods_currency_trip.framework */; };
 		8433A3EF22A455BD009FA888 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433A3EE22A455BD009FA888 /* AppDelegate.swift */; };
-		8433A3F122A455BD009FA888 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433A3F022A455BD009FA888 /* FirstViewController.swift */; };
-		8433A3F322A455BD009FA888 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433A3F222A455BD009FA888 /* SecondViewController.swift */; };
+		8433A3F122A455BD009FA888 /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433A3F022A455BD009FA888 /* ConverterViewController.swift */; };
+		8433A3F322A455BD009FA888 /* CurrenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433A3F222A455BD009FA888 /* CurrenciesViewController.swift */; };
 		8433A3F622A455BD009FA888 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8433A3F422A455BD009FA888 /* Main.storyboard */; };
 		8433A3F822A455BE009FA888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8433A3F722A455BE009FA888 /* Assets.xcassets */; };
 		8433A3FB22A455BE009FA888 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8433A3F922A455BE009FA888 /* LaunchScreen.storyboard */; };
@@ -44,8 +44,8 @@
 		746902169A22F50B49C298CF /* Pods_currency_tripUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_currency_tripUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8433A3EB22A455BD009FA888 /* currency trip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "currency trip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8433A3EE22A455BD009FA888 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8433A3F022A455BD009FA888 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		8433A3F222A455BD009FA888 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		8433A3F022A455BD009FA888 /* ConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
+		8433A3F222A455BD009FA888 /* CurrenciesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesViewController.swift; sourceTree = "<group>"; };
 		8433A3F522A455BD009FA888 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8433A3F722A455BE009FA888 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8433A3FA22A455BE009FA888 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -117,8 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				8433A3EE22A455BD009FA888 /* AppDelegate.swift */,
-				8433A3F022A455BD009FA888 /* FirstViewController.swift */,
-				8433A3F222A455BD009FA888 /* SecondViewController.swift */,
+				8433A3F022A455BD009FA888 /* ConverterViewController.swift */,
+				8433A3F222A455BD009FA888 /* CurrenciesViewController.swift */,
 				8433A3F422A455BD009FA888 /* Main.storyboard */,
 				8433A3F722A455BE009FA888 /* Assets.xcassets */,
 				8433A3F922A455BE009FA888 /* LaunchScreen.storyboard */,
@@ -371,9 +371,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8433A3F322A455BD009FA888 /* SecondViewController.swift in Sources */,
+				8433A3F322A455BD009FA888 /* CurrenciesViewController.swift in Sources */,
 				8433A3EF22A455BD009FA888 /* AppDelegate.swift in Sources */,
-				8433A3F122A455BD009FA888 /* FirstViewController.swift in Sources */,
+				8433A3F122A455BD009FA888 /* ConverterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
