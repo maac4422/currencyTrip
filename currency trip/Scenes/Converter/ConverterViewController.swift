@@ -19,13 +19,8 @@ protocol ConverterDisplayLogic: class {
 }
 
 class ConverterViewController: UIViewController {
-    
-    @IBOutlet weak var codeLabel: UILabel!
-    @IBOutlet weak var convertedValueLabel: UILabel!
     @IBOutlet weak var currenciesTableView: UITableView!
-    @IBOutlet weak var currencyTableViewCell: GroupTableViewCell!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var valueLabel: UILabel!
+    @IBOutlet weak var currencyTableViewCell: CurrencyTableViewCell!
     @IBOutlet weak var messageLabel: UILabel!
     
     var interactor: ConverterBusinessLogic?
@@ -56,25 +51,9 @@ class ConverterViewController: UIViewController {
         router.dataStore = interactor
     }
 
-    // MARK: Routing
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let scene = segue.identifier {
-            let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
-            if let router = router, router.responds(to: selector) {
-                router.perform(selector, with: segue)
-            }
-        }
-    }
-
-    // MARK: View lifecycle
-
     override func viewDidLoad() {
         super.viewDidLoad()
-//        TODO complete
-//        displayCurrencies(viewModel: <#Currency.Fetch.ViewModel#>)
     }
-
     
 }
 
@@ -117,17 +96,14 @@ extension ConverterViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "GroupTableViewCell", for: indexPath) as!currencyTableViewCell
-        cell. = currencies[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CurrencyTableViewCell", for: indexPath) as!CurrencyTableViewCell
+        cell.currency = currencies[indexPath.row]
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let cell = tableView.cellForRow(at: indexPath) as? currencyTableViewCell {
-            transitionImage = cell.groupImage
-            transitionLabel = cell.groupName
-            transitionContainerView = cell.salmonSquare
-            interactor?.showGroup(group: cell.group)
+        if let cell = tableView.cellForRow(at: indexPath) as? CurrencyTableViewCell, let currency = cell.currency {
+            interactor?.convert(request: currency)
         }
     }
 }

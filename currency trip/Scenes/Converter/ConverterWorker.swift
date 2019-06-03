@@ -19,8 +19,8 @@ protocol IConverterWorker {
 
 class ConverterWorker: IConverterWorker {
     var currencyTripApi: ICurrencyTripAPI?
-    
 //    var countryFlagsApi: ICountryFlagsAPI?
+    
     init() {
         currencyTripApi = CurrencyTripAPI()
     }

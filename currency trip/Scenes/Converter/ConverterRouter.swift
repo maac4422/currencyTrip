@@ -25,41 +25,8 @@ class ConverterRouter: NSObject, ConverterRoutingLogic, ConverterDataPassing {
     weak var viewController: ConverterViewController?
     var dataStore: ConverterDataStore?
   
-    // MARK: Routing
-  
     func routeToCurrencies(segue: UIStoryboardSegue?) {
-            guard let segue = segue, let destinationVC = segue.destination as? CurrenciesViewController else { return }
-//            TODO COMPLETE ONLY THE IF (NOT ELSE)
-//            var destinationDS = destinationVC.router!.dataStore!
-//            passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-//        } else {
-//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//            let destinationVC = storyboard.instantiateViewController(withIdentifier: "SomewhereViewController") as! SomewhereViewController
-//            var destinationDS = destinationVC.router!.dataStore!
-//            passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-//            navigateToSomewhere(source: viewController!, destination: destinationVC)
-//        }
-        
-//        O tmbn así
-//        if let segue = segue {
-//            let destinationVC = segue.destination as! CurrenciesViewController
-//            var destinationDS = destinationVC.router!.dataStore!
-//            destinationVC.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
-//            passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-//        }
+        guard let segue = segue, let destinationVC = segue.destination as? CurrenciesViewController else { return }
     }
-
-  // MARK: Navigation
-  
-  //func navigateToSomewhere(source: converterViewController, destination: SomewhereViewController)
-  //{
-  //  source.show(destination, sender: nil)
-  //}
-  
-  // MARK: Passing data
-  
-    func passDataToSomewhere(source: ConverterDataStore, destination: inout CurrenciesDataStore) {
-        destination.currencies = source.currencies
-//        destination.name = source.name
-    }
+    
 }

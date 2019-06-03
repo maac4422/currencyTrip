@@ -38,7 +38,7 @@ enum Currency {
             }
         }
 
-        struct ViewModel {
+        struct ViewModel: Codable {
             var id: Int
             var code: String
             var image: String?
