@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36AFFD561177FFAEE3E410604C367B53 /* Pods-currency tripUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26B6389A31CE4D672C9DCB7C85951357 /* Pods-currency tripUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4346B1BBE03B3A1602F92315298BE03E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		79CFCC9081D711CBAC7DD636C27F8862 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		9624AA49FAFC0EF8C4263FCAB741D34D /* Pods-currency trip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EA6AEF53278A4323C5A9F89E9C0D9BC /* Pods-currency trip-dummy.m */; };
+		D3EA90FB74D8E9EA04F0311CD89283ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		DA9483DD46DD653E841875C373122D9E /* Pods-currency trip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 94D84E604C7AC3EBC2142671543E2B49 /* Pods-currency trip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC8DD3B17F4C7DDB66393CE31A9D74DC /* Pods-currency tripUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 486F3196BF53F3E2ACCE26CA7487D2E3 /* Pods-currency tripUITests-dummy.m */; };
+		EB4EC512CC0B33965B1C14C521355C9C /* Pods-currency tripTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 88DD90816A47A67710A07C88B5F4F196 /* Pods-currency tripTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF39016AABBE59095F42C2CE6E29B3B9 /* Pods-currency tripTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B60A73BD7DECA9683B09EE1334B4BF /* Pods-currency tripTests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75689C5E9DFEF349515C688EC1805C4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0831EC5D54CC75AF0BDD04F332AC0B9E;
+			remoteInfo = "Pods-currency trip";
+		};
+		E78C72B6707CF04ACADB0CB790E64FF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0831EC5D54CC75AF0BDD04F332AC0B9E;
+			remoteInfo = "Pods-currency trip";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DE120AD2B4A34AB0F7DE5509B7D18DD /* Pods-currency tripTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-currency tripTests.modulemap"; sourceTree = "<group>"; };
+		20B60A73BD7DECA9683B09EE1334B4BF /* Pods-currency tripTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-currency tripTests-dummy.m"; sourceTree = "<group>"; };
+		26B6389A31CE4D672C9DCB7C85951357 /* Pods-currency tripUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-currency tripUITests-umbrella.h"; sourceTree = "<group>"; };
+		2BF21A737AE4C30E1C251ED409C3EF09 /* Pods-currency tripTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-currency tripTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		37DF8DC52E8EEFB270143210EFD4CE84 /* Pods-currency tripTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-currency tripTests.release.xcconfig"; sourceTree = "<group>"; };
+		3C06AB751D9C4BF9311B30881487BBA8 /* Pods-currency tripUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-currency tripUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		486F3196BF53F3E2ACCE26CA7487D2E3 /* Pods-currency tripUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-currency tripUITests-dummy.m"; sourceTree = "<group>"; };
+		4AE8B7C4CE03F657C6CCF162A3672789 /* Pods-currency tripTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-currency tripTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		501B5B84D3E79271D882C4508EA0C1AD /* Pods-currency trip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-currency trip-Info.plist"; sourceTree = "<group>"; };
+		5D2EE86EB0216C47AF7F2AA799D4454F /* Pods_currency_tripUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_currency_tripUITests.framework; path = "Pods-currency tripUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E9D158D75C0F505E7D379DC6FBA1884 /* Pods-currency trip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-currency trip.debug.xcconfig"; sourceTree = "<group>"; };
+		636DB92563DC35BEB9B70C5783DFCC01 /* Pods-currency tripUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-currency tripUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		670964C144F69965BD4F3142339FDC25 /* Pods-currency tripUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-currency tripUITests.modulemap"; sourceTree = "<group>"; };
+		6EA6AEF53278A4323C5A9F89E9C0D9BC /* Pods-currency trip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-currency trip-dummy.m"; sourceTree = "<group>"; };
+		7650DED2F4D2038653E7D0628C2EFBA4 /* Pods-currency tripUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-currency tripUITests-Info.plist"; sourceTree = "<group>"; };
+		7E061C02C39A34B7BFC02EFD80674406 /* Pods-currency trip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-currency trip.release.xcconfig"; sourceTree = "<group>"; };
+		88DD90816A47A67710A07C88B5F4F196 /* Pods-currency tripTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-currency tripTests-umbrella.h"; sourceTree = "<group>"; };
+		8B4BE2BA00E50CBA6D26EF386AF107FD /* Pods-currency trip-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-currency trip-acknowledgements.markdown"; sourceTree = "<group>"; };
+		94D84E604C7AC3EBC2142671543E2B49 /* Pods-currency trip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-currency trip-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DCC6D4DD48D291B7A0873646478CC6D /* Pods-currency trip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-currency trip.modulemap"; sourceTree = "<group>"; };
+		A251492D169D842910C9C61DC4BDB48E /* Pods_currency_trip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_currency_trip.framework; path = "Pods-currency trip.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A494BF5D3F5E254A0EEDDDD30E6F5934 /* Pods_currency_tripTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_currency_tripTests.framework; path = "Pods-currency tripTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA7F69F3F527FF73E29873A3C1FF8330 /* Pods-currency tripUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-currency tripUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C8EDB8EB37C95D959F4674DEE80B2700 /* Pods-currency trip-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-currency trip-acknowledgements.plist"; sourceTree = "<group>"; };
+		E16201FA707D0894C95499F4FC062282 /* Pods-currency tripUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-currency tripUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EA710103A8C99A5A6EB458A96C413CB3 /* Pods-currency tripTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-currency tripTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EE0B292A9621A4FCB0E14D7CB5AE071E /* Pods-currency tripTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-currency tripTests-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AD5D6A10273FD9B93754799BF747982 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4346B1BBE03B3A1602F92315298BE03E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		981BE44C3B4CA6E72A714E919F6A7DDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3EA90FB74D8E9EA04F0311CD89283ED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDCB1CDD47B3A350774AB68803ED9FED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79CFCC9081D711CBAC7DD636C27F8862 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F17880AB14223903EE428788D96B94B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				76DC8876ADEA86F54CBB7ECD9C2502DE /* Pods-currency trip */,
+				F3F4FE80B741636E34DC3201D7E224DC /* Pods-currency tripTests */,
+				68833180070AEA9D623D670F9823903F /* Pods-currency tripUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		68833180070AEA9D623D670F9823903F /* Pods-currency tripUITests */ = {
+			isa = PBXGroup;
+			children = (
+				670964C144F69965BD4F3142339FDC25 /* Pods-currency tripUITests.modulemap */,
+				3C06AB751D9C4BF9311B30881487BBA8 /* Pods-currency tripUITests-acknowledgements.markdown */,
+				636DB92563DC35BEB9B70C5783DFCC01 /* Pods-currency tripUITests-acknowledgements.plist */,
+				486F3196BF53F3E2ACCE26CA7487D2E3 /* Pods-currency tripUITests-dummy.m */,
+				7650DED2F4D2038653E7D0628C2EFBA4 /* Pods-currency tripUITests-Info.plist */,
+				26B6389A31CE4D672C9DCB7C85951357 /* Pods-currency tripUITests-umbrella.h */,
+				E16201FA707D0894C95499F4FC062282 /* Pods-currency tripUITests.debug.xcconfig */,
+				BA7F69F3F527FF73E29873A3C1FF8330 /* Pods-currency tripUITests.release.xcconfig */,
+			);
+			name = "Pods-currency tripUITests";
+			path = "Target Support Files/Pods-currency tripUITests";
+			sourceTree = "<group>";
+		};
+		6C33EF508C48C3D9FC7C626F2F6F52AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A251492D169D842910C9C61DC4BDB48E /* Pods_currency_trip.framework */,
+				A494BF5D3F5E254A0EEDDDD30E6F5934 /* Pods_currency_tripTests.framework */,
+				5D2EE86EB0216C47AF7F2AA799D4454F /* Pods_currency_tripUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76DC8876ADEA86F54CBB7ECD9C2502DE /* Pods-currency trip */ = {
+			isa = PBXGroup;
+			children = (
+				9DCC6D4DD48D291B7A0873646478CC6D /* Pods-currency trip.modulemap */,
+				8B4BE2BA00E50CBA6D26EF386AF107FD /* Pods-currency trip-acknowledgements.markdown */,
+				C8EDB8EB37C95D959F4674DEE80B2700 /* Pods-currency trip-acknowledgements.plist */,
+				6EA6AEF53278A4323C5A9F89E9C0D9BC /* Pods-currency trip-dummy.m */,
+				501B5B84D3E79271D882C4508EA0C1AD /* Pods-currency trip-Info.plist */,
+				94D84E604C7AC3EBC2142671543E2B49 /* Pods-currency trip-umbrella.h */,
+				5E9D158D75C0F505E7D379DC6FBA1884 /* Pods-currency trip.debug.xcconfig */,
+				7E061C02C39A34B7BFC02EFD80674406 /* Pods-currency trip.release.xcconfig */,
+			);
+			name = "Pods-currency trip";
+			path = "Target Support Files/Pods-currency trip";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				6C33EF508C48C3D9FC7C626F2F6F52AE /* Products */,
+				2F17880AB14223903EE428788D96B94B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3F4FE80B741636E34DC3201D7E224DC /* Pods-currency tripTests */ = {
+			isa = PBXGroup;
+			children = (
+				0DE120AD2B4A34AB0F7DE5509B7D18DD /* Pods-currency tripTests.modulemap */,
+				EA710103A8C99A5A6EB458A96C413CB3 /* Pods-currency tripTests-acknowledgements.markdown */,
+				4AE8B7C4CE03F657C6CCF162A3672789 /* Pods-currency tripTests-acknowledgements.plist */,
+				20B60A73BD7DECA9683B09EE1334B4BF /* Pods-currency tripTests-dummy.m */,
+				EE0B292A9621A4FCB0E14D7CB5AE071E /* Pods-currency tripTests-Info.plist */,
+				88DD90816A47A67710A07C88B5F4F196 /* Pods-currency tripTests-umbrella.h */,
+				2BF21A737AE4C30E1C251ED409C3EF09 /* Pods-currency tripTests.debug.xcconfig */,
+				37DF8DC52E8EEFB270143210EFD4CE84 /* Pods-currency tripTests.release.xcconfig */,
+			);
+			name = "Pods-currency tripTests";
+			path = "Target Support Files/Pods-currency tripTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3900F0C64D4A91C73CBB7AD07CBA8020 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB4EC512CC0B33965B1C14C521355C9C /* Pods-currency tripTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A788729604E60F50182077D203F80DF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA9483DD46DD653E841875C373122D9E /* Pods-currency trip-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3576F984D298C0F040843A44D613B49 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36AFFD561177FFAEE3E410604C367B53 /* Pods-currency tripUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		03A6AF86BAD57805A63CA6F8E8DDAB71 /* Pods-currency tripTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ACC73BBC4FA1B2F7B87A0A8B3F4C92A /* Build configuration list for PBXNativeTarget "Pods-currency tripTests" */;
+			buildPhases = (
+				3900F0C64D4A91C73CBB7AD07CBA8020 /* Headers */,
+				597186D49C82001688B7C41FE232BF07 /* Sources */,
+				1AD5D6A10273FD9B93754799BF747982 /* Frameworks */,
+				8D934968A3A5D2B66FA7E1E2CB8CF383 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65B8E76903A54817CC197F3A6A46FB12 /* PBXTargetDependency */,
+			);
+			name = "Pods-currency tripTests";
+			productName = "Pods-currency tripTests";
+			productReference = A494BF5D3F5E254A0EEDDDD30E6F5934 /* Pods_currency_tripTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0831EC5D54CC75AF0BDD04F332AC0B9E /* Pods-currency trip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 282671F1EFF24AF50601E03F62C0AD4D /* Build configuration list for PBXNativeTarget "Pods-currency trip" */;
+			buildPhases = (
+				8A788729604E60F50182077D203F80DF /* Headers */,
+				4764B2C66D8E08C5E0EFF0D0BBB5A29F /* Sources */,
+				981BE44C3B4CA6E72A714E919F6A7DDC /* Frameworks */,
+				323DF2480BC4886E651F18DA4B8DB33B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-currency trip";
+			productName = "Pods-currency trip";
+			productReference = A251492D169D842910C9C61DC4BDB48E /* Pods_currency_trip.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		80BC93E083A52F542F4DC6B82E0DC21C /* Pods-currency tripUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E71138C3728FE9BB23859CC08DACBFF4 /* Build configuration list for PBXNativeTarget "Pods-currency tripUITests" */;
+			buildPhases = (
+				D3576F984D298C0F040843A44D613B49 /* Headers */,
+				F012D44761653031BF25E86D4EC68E08 /* Sources */,
+				EDCB1CDD47B3A350774AB68803ED9FED /* Frameworks */,
+				67B3ADE97CF73B42C7010D99E41B6877 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A57586BF80015DFA7E01E86ABA2EC90E /* PBXTargetDependency */,
+			);
+			name = "Pods-currency tripUITests";
+			productName = "Pods-currency tripUITests";
+			productReference = 5D2EE86EB0216C47AF7F2AA799D4454F /* Pods_currency_tripUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 6C33EF508C48C3D9FC7C626F2F6F52AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0831EC5D54CC75AF0BDD04F332AC0B9E /* Pods-currency trip */,
+				03A6AF86BAD57805A63CA6F8E8DDAB71 /* Pods-currency tripTests */,
+				80BC93E083A52F542F4DC6B82E0DC21C /* Pods-currency tripUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		323DF2480BC4886E651F18DA4B8DB33B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B3ADE97CF73B42C7010D99E41B6877 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D934968A3A5D2B66FA7E1E2CB8CF383 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4764B2C66D8E08C5E0EFF0D0BBB5A29F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9624AA49FAFC0EF8C4263FCAB741D34D /* Pods-currency trip-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		597186D49C82001688B7C41FE232BF07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF39016AABBE59095F42C2CE6E29B3B9 /* Pods-currency tripTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F012D44761653031BF25E86D4EC68E08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC8DD3B17F4C7DDB66393CE31A9D74DC /* Pods-currency tripUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65B8E76903A54817CC197F3A6A46FB12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-currency trip";
+			target = 0831EC5D54CC75AF0BDD04F332AC0B9E /* Pods-currency trip */;
+			targetProxy = E78C72B6707CF04ACADB0CB790E64FF5 /* PBXContainerItemProxy */;
+		};
+		A57586BF80015DFA7E01E86ABA2EC90E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-currency trip";
+			target = 0831EC5D54CC75AF0BDD04F332AC0B9E /* Pods-currency trip */;
+			targetProxy = 75689C5E9DFEF349515C688EC1805C4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		28E411A0335476C7D24E9BA894C68D86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E061C02C39A34B7BFC02EFD80674406 /* Pods-currency trip.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-currency trip/Pods-currency trip-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-currency trip/Pods-currency trip.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4D67E793B6ACB84973929B1CE92BDDE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BF21A737AE4C30E1C251ED409C3EF09 /* Pods-currency tripTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-currency tripTests/Pods-currency tripTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-currency tripTests/Pods-currency tripTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5EC65B5C56AE60A513B5AB577BBA4787 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37DF8DC52E8EEFB270143210EFD4CE84 /* Pods-currency tripTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-currency tripTests/Pods-currency tripTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-currency tripTests/Pods-currency tripTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9DDE123ACECE1D34FBAA19D3B889276A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA7F69F3F527FF73E29873A3C1FF8330 /* Pods-currency tripUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-currency tripUITests/Pods-currency tripUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-currency tripUITests/Pods-currency tripUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9E76346D89A9A9776AD21CF43A5D51FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E16201FA707D0894C95499F4FC062282 /* Pods-currency tripUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-currency tripUITests/Pods-currency tripUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-currency tripUITests/Pods-currency tripUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C8E5A69349225CFF1632155AC0348FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E9D158D75C0F505E7D379DC6FBA1884 /* Pods-currency trip.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-currency trip/Pods-currency trip-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-currency trip/Pods-currency trip.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1ACC73BBC4FA1B2F7B87A0A8B3F4C92A /* Build configuration list for PBXNativeTarget "Pods-currency tripTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D67E793B6ACB84973929B1CE92BDDE9 /* Debug */,
+				5EC65B5C56AE60A513B5AB577BBA4787 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		282671F1EFF24AF50601E03F62C0AD4D /* Build configuration list for PBXNativeTarget "Pods-currency trip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8E5A69349225CFF1632155AC0348FF3 /* Debug */,
+				28E411A0335476C7D24E9BA894C68D86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196DFA3E4A09A28224918543529A1885 /* Debug */,
+				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E71138C3728FE9BB23859CC08DACBFF4 /* Build configuration list for PBXNativeTarget "Pods-currency tripUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E76346D89A9A9776AD21CF43A5D51FD /* Debug */,
+				9DDE123ACECE1D34FBAA19D3B889276A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
