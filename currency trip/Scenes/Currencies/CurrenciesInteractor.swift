@@ -1,5 +1,5 @@
 //
-//  converterWorker.swift
+//  CurrenciesInteractor.swift
 //  currency trip
 //
 //  Created by Guillermo Costa on 6/2/19.
@@ -10,10 +10,13 @@
 //  see http://clean-swift.com
 //
 
+import UIKit
 
-class ConverterWorker
-{
-  func doSomeWork()
-  {
-  }
+protocol CurrenciesDataStore {
+    var currencies: [Currency.Fetch.ViewModel]? { get set }
+}
+
+class CurrenciesInteractor: CurrenciesDataStore {
+
+    var currencies: [Currency.Fetch.ViewModel]?
 }

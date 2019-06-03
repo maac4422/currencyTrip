@@ -21,6 +21,11 @@
 		8448266322A460EF000621AA /* ConverterModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448265D22A460EF000621AA /* ConverterModels.swift */; };
 		8448266422A460EF000621AA /* ConverterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448265E22A460EF000621AA /* ConverterViewController.swift */; };
 		8448266522A460EF000621AA /* ConverterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448265F22A460EF000621AA /* ConverterInteractor.swift */; };
+		8448266922A46DA9000621AA /* CountryFlagsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448266822A46DA9000621AA /* CountryFlagsApi.swift */; };
+		8448266B22A48443000621AA /* CurrencyTripApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448266A22A48443000621AA /* CurrencyTripApi.swift */; };
+		8448267022A4B86B000621AA /* CurrenciesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8448266F22A4B86B000621AA /* CurrenciesInteractor.swift */; };
+		8448267222A4D0F4000621AA /* Converter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8448267122A4D0F4000621AA /* Converter.storyboard */; };
+		8448267522A4DBDA000621AA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8448267422A4DBDA000621AA /* Localizable.strings */; };
 		E05871B73BCE856A9C92C9F1 /* Pods_currency_tripUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 746902169A22F50B49C298CF /* Pods_currency_tripUITests.framework */; };
 		F14E4226E45AF0536E7A0136 /* Pods_currency_tripTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60DAE54C621035E91A9A1D27 /* Pods_currency_tripTests.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +71,11 @@
 		8448265D22A460EF000621AA /* ConverterModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterModels.swift; sourceTree = "<group>"; };
 		8448265E22A460EF000621AA /* ConverterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterViewController.swift; sourceTree = "<group>"; };
 		8448265F22A460EF000621AA /* ConverterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterInteractor.swift; sourceTree = "<group>"; };
+		8448266822A46DA9000621AA /* CountryFlagsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryFlagsApi.swift; sourceTree = "<group>"; };
+		8448266A22A48443000621AA /* CurrencyTripApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTripApi.swift; sourceTree = "<group>"; };
+		8448266F22A4B86B000621AA /* CurrenciesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesInteractor.swift; sourceTree = "<group>"; };
+		8448267122A4D0F4000621AA /* Converter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Converter.storyboard; sourceTree = "<group>"; };
+		8448267422A4DBDA000621AA /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		8BBF1FB8DE0799E9FE8E67C2 /* Pods-currency tripUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-currency tripUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-currency tripUITests/Pods-currency tripUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B6AAFCBDBBD4900E6AF1F214 /* Pods-currency tripTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-currency tripTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-currency tripTests/Pods-currency tripTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B8D00DCA3D1D84480CE892D7 /* Pods_currency_trip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_currency_trip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,7 +136,9 @@
 		8433A3ED22A455BD009FA888 /* currency trip */ = {
 			isa = PBXGroup;
 			children = (
-				8448265822A4607A000621AA /* scenes */,
+				8448266622A46D5A000621AA /* Core */,
+				8448265822A4607A000621AA /* Scenes */,
+				8448267322A4DBB3000621AA /* Resources */,
 				8433A3EE22A455BD009FA888 /* AppDelegate.swift */,
 				8433A3F222A455BD009FA888 /* CurrenciesViewController.swift */,
 				8433A3F422A455BD009FA888 /* Main.storyboard */,
@@ -140,7 +152,7 @@
 		8433A40422A455BE009FA888 /* currency tripTests */ = {
 			isa = PBXGroup;
 			children = (
-				8433A40522A455BE009FA888 /* currency_tripTests.swift */,
+				8448266C22A49E7D000621AA /* Scenes */,
 				8433A40722A455BE009FA888 /* Info.plist */,
 			);
 			path = "currency tripTests";
@@ -155,12 +167,13 @@
 			path = "currency tripUITests";
 			sourceTree = "<group>";
 		};
-		8448265822A4607A000621AA /* scenes */ = {
+		8448265822A4607A000621AA /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				8448266E22A4B857000621AA /* Currencies */,
 				8448265922A46087000621AA /* Converter */,
 			);
-			path = scenes;
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		8448265922A46087000621AA /* Converter */ = {
@@ -172,8 +185,58 @@
 				8448265D22A460EF000621AA /* ConverterModels.swift */,
 				8448265E22A460EF000621AA /* ConverterViewController.swift */,
 				8448265F22A460EF000621AA /* ConverterInteractor.swift */,
+				8448267122A4D0F4000621AA /* Converter.storyboard */,
 			);
 			path = Converter;
+			sourceTree = "<group>";
+		};
+		8448266622A46D5A000621AA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8448266722A46D6D000621AA /* Services */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8448266722A46D6D000621AA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8448266822A46DA9000621AA /* CountryFlagsApi.swift */,
+				8448266A22A48443000621AA /* CurrencyTripApi.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8448266C22A49E7D000621AA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8448266D22A49E83000621AA /* Converter */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8448266D22A49E83000621AA /* Converter */ = {
+			isa = PBXGroup;
+			children = (
+				8433A40522A455BE009FA888 /* currency_tripTests.swift */,
+			);
+			path = Converter;
+			sourceTree = "<group>";
+		};
+		8448266E22A4B857000621AA /* Currencies */ = {
+			isa = PBXGroup;
+			children = (
+				8448266F22A4B86B000621AA /* CurrenciesInteractor.swift */,
+			);
+			path = Currencies;
+			sourceTree = "<group>";
+		};
+		8448267322A4DBB3000621AA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8448267422A4DBDA000621AA /* Localizable.strings */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		BF4E4C838F909A80BAA00C69 /* Frameworks */ = {
@@ -306,9 +369,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8448267522A4DBDA000621AA /* Localizable.strings in Resources */,
 				8433A3FB22A455BE009FA888 /* LaunchScreen.storyboard in Resources */,
 				8433A3F822A455BE009FA888 /* Assets.xcassets in Resources */,
 				8433A3F622A455BD009FA888 /* Main.storyboard in Resources */,
+				8448267222A4D0F4000621AA /* Converter.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,10 +468,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8433A3F322A455BD009FA888 /* CurrenciesViewController.swift in Sources */,
+				8448267022A4B86B000621AA /* CurrenciesInteractor.swift in Sources */,
 				8433A3EF22A455BD009FA888 /* AppDelegate.swift in Sources */,
+				8448266922A46DA9000621AA /* CountryFlagsApi.swift in Sources */,
 				8448266122A460EF000621AA /* ConverterWorker.swift in Sources */,
 				8448266522A460EF000621AA /* ConverterInteractor.swift in Sources */,
 				8448266022A460EF000621AA /* ConverterPresenter.swift in Sources */,
+				8448266B22A48443000621AA /* CurrencyTripApi.swift in Sources */,
 				8448266322A460EF000621AA /* ConverterModels.swift in Sources */,
 				8448266222A460EF000621AA /* ConverterRouter.swift in Sources */,
 				8448266422A460EF000621AA /* ConverterViewController.swift in Sources */,

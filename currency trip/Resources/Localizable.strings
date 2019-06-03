@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  currency trip
+
+  Created by Guillermo Costa on 6/2/19.
+  Copyright © 2019 Guillermo Costa. All rights reserved.
+*/
+
+//MARK: Converter
+"ErrorData" = "Cannot get currencies!";
