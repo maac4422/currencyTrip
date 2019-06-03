@@ -53,6 +53,7 @@ class ConverterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        interactor?.fetch()
     }
     
 }
@@ -60,7 +61,6 @@ class ConverterViewController: UIViewController {
 extension ConverterViewController: ConverterDisplayLogic {
     
     func convertCurrency(viewModel: [Currency.Fetch.ViewModel]) {
-//        let request = Currency.Fetch.Request()
         currencies = viewModel
         showResults(show: true)
         currenciesTableView.reloadData()
@@ -68,7 +68,8 @@ extension ConverterViewController: ConverterDisplayLogic {
     
     func displayCurrencies(viewModel: [Currency.Fetch.ViewModel]) {
         currencies = viewModel
-        interactor?.fetch()
+        showResults(show: true)
+        currenciesTableView.reloadData()
     }
     
     func displayCurrenciesFetchingError(response: String) {

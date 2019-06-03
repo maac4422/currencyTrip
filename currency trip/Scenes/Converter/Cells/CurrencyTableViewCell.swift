@@ -27,25 +27,13 @@ class CurrencyTableViewCell: UITableViewCell {
     }
     
     private func updateUI() {
-        if let currency = currency {
-            codeLabel.text = currency.code
-            convertedValueLabel.text = currency.convertedValue?.description
-            nameLabel.text = currency.name
-            valueLabel.text = currency.value.description
-            if let urlImage = currency.image {
-                fetchImage(flag: urlImage)
-            }
+        guard let currency = currency  else { return }
+        codeLabel.text = currency.code
+        convertedValueLabel.text = currency.convertedValue?.description
+        nameLabel.text = currency.name
+        valueLabel.text = currency.value.description
+        if let imageCode = currency.image {
+            self.flagImageView.downloadFlag(from: imageCode)
         }
     }
-    
-    private func fetchImage(flag: String) {
-        let countryFlagApi = CountryFlagsAPI()
-        countryFlagApi.request(for: flag, completionHandler: { data, response, error in
-            guard let data = data, error == nil else { return }
-            DispatchQueue.main.async() {
-                self.flagImageView.image = UIImage(data: data)
-            }
-        })
-    }
-    
 }

@@ -139,7 +139,6 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="currenciesTableView" destination="oix-1Q-kBo" id="Zkc-k3-5wl"/>
-                        <outlet property="groupsTableView" destination="oix-1Q-kBo" id="zSI-42-kJo"/>
                         <outlet property="messageLabel" destination="RLJ-ba-x5H" id="rJT-ae-8KF"/>
                     </connections>
                 </viewController>
@@ -150,10 +149,10 @@
     </scenes>
     <resources>
         <namedColor name="BaseColor">
-            <color name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+            <color red="0.25499999523162842" green="0.6119999885559082" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="BaseFontColor">
-            <color name="headerTextColor" catalog="System" colorSpace="catalog"/>
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
