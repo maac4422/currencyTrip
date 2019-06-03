@@ -11,7 +11,6 @@
 		8433A3EF22A455BD009FA888 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433A3EE22A455BD009FA888 /* AppDelegate.swift */; };
 		8433A3F322A455BD009FA888 /* CurrenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433A3F222A455BD009FA888 /* CurrenciesViewController.swift */; };
 		8433A3F622A455BD009FA888 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8433A3F422A455BD009FA888 /* Main.storyboard */; };
-		8433A3F822A455BE009FA888 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8433A3F722A455BE009FA888 /* Assets.xcassets */; };
 		8433A3FB22A455BE009FA888 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8433A3F922A455BE009FA888 /* LaunchScreen.storyboard */; };
 		8433A40622A455BE009FA888 /* currency_tripTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433A40522A455BE009FA888 /* currency_tripTests.swift */; };
 		8433A41122A455BE009FA888 /* currency_tripUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433A41022A455BE009FA888 /* currency_tripUITests.swift */; };
@@ -58,7 +57,6 @@
 		8433A3EE22A455BD009FA888 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8433A3F222A455BD009FA888 /* CurrenciesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesViewController.swift; sourceTree = "<group>"; };
 		8433A3F522A455BD009FA888 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8433A3F722A455BE009FA888 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8433A3FA22A455BE009FA888 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8433A3FC22A455BE009FA888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8433A40122A455BE009FA888 /* currency tripTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "currency tripTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,7 +144,6 @@
 				8433A3EE22A455BD009FA888 /* AppDelegate.swift */,
 				8433A3F222A455BD009FA888 /* CurrenciesViewController.swift */,
 				8433A3F422A455BD009FA888 /* Main.storyboard */,
-				8433A3F722A455BE009FA888 /* Assets.xcassets */,
 				8433A3F922A455BE009FA888 /* LaunchScreen.storyboard */,
 				8433A3FC22A455BE009FA888 /* Info.plist */,
 			);
@@ -385,7 +382,6 @@
 			files = (
 				8448267522A4DBDA000621AA /* Localizable.strings in Resources */,
 				8433A3FB22A455BE009FA888 /* LaunchScreen.storyboard in Resources */,
-				8433A3F822A455BE009FA888 /* Assets.xcassets in Resources */,
 				8433A3F622A455BD009FA888 /* Main.storyboard in Resources */,
 				8448267A22A4F46A000621AA /* Assets.xcassets in Resources */,
 				8448267222A4D0F4000621AA /* Converter.storyboard in Resources */,
