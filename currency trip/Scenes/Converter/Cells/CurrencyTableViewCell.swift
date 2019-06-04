@@ -10,7 +10,11 @@ import UIKit
 
 class CurrencyTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var codeLabel: UILabel!
+    @IBOutlet weak var codeLabel: UILabel! {
+        didSet {
+            codeLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 24.0)
+        }
+    }
     @IBOutlet weak var convertedValueLabel: UILabel!
     @IBOutlet weak var flagImageView: UIImageView! {
         didSet {
@@ -18,7 +22,11 @@ class CurrencyTableViewCell: UITableViewCell {
         }
     }
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var valueLabel: UILabel!
+    @IBOutlet weak var valueLabel: UILabel! {
+        didSet {
+            valueLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 22.0)
+        }
+    }
     
     var currency: Currency.Fetch.ViewModel? {
         didSet {
@@ -34,6 +42,20 @@ class CurrencyTableViewCell: UITableViewCell {
         valueLabel.text = currency.value.description
         if let imageCode = currency.image {
             self.flagImageView.downloadFlag(from: imageCode)
+        }
+    }
+}
+
+@IBDesignable
+extension UIView {
+    
+    @IBInspectable
+    var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
         }
     }
 }

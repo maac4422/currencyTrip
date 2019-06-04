@@ -13,7 +13,7 @@ typealias CompletionRequestFlag = (Data?, URLResponse?, Error?) -> ()
 
 enum CountryFlagSize: Int {
     case small = 24
-    case medium = 32
+    case medium = 48
     case large = 64
 }
 
@@ -25,7 +25,6 @@ enum CountryFlagTheme: String {
 protocol ICountryFlagsAPI {
     var baseMethod: String { get }
     var baseScheme: String { get }
-    var baseUrl: String { get }
     var imageFormat: String { get }
     var imageSize: CountryFlagSize { get }
     var imageTheme: CountryFlagTheme { get }
@@ -33,27 +32,23 @@ protocol ICountryFlagsAPI {
     func request(for flag: String, completionHandler: @escaping CompletionRequestFlag)
 }
 
-// https://www.countryflags.io/eu/flat/48.png
 class CountryFlagsAPI: ICountryFlagsAPI {
     let baseHost = "www.countryflags.io"
     let baseMethod = "GET"
     let baseScheme = "https"
-    let baseUrl: String
     let imageFormat = ".png"
     let imageSize: CountryFlagSize
     let imageTheme: CountryFlagTheme
     
     init(imageSize: CountryFlagSize = .medium) {
-        self.baseUrl = "https://www.countryflags.io/"
         self.imageSize = imageSize
         self.imageTheme = .flat
     }
     
     func getUrlRequest(for flag: String) -> URLRequest? {
         let urlSepare = "/"
-        var urlImage = urlSepare + flag + urlSepare +  imageTheme.rawValue
+        var urlImage = urlSepare + flag + urlSepare + imageTheme.rawValue
         urlImage += urlSepare + String(imageSize.rawValue) + imageFormat
-        print(urlImage)
         var components = URLComponents()
         components.scheme = baseScheme
         components.host = baseHost
