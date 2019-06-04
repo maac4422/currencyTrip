@@ -10,7 +10,11 @@ import UIKit
 
 class CurrencyTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var codeLabel: UILabel!
+    @IBOutlet weak var codeLabel: UILabel! {
+        didSet {
+            codeLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 24.0)
+        }
+    }
     @IBOutlet weak var convertedValueLabel: UILabel!
     @IBOutlet weak var flagImageView: UIImageView! {
         didSet {
@@ -18,7 +22,11 @@ class CurrencyTableViewCell: UITableViewCell {
         }
     }
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var valueLabel: UILabel!
+    @IBOutlet weak var valueLabel: UILabel! {
+        didSet {
+            valueLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 22.0)
+        }
+    }
     
     var currency: Currency.Fetch.ViewModel? {
         didSet {
@@ -27,25 +35,27 @@ class CurrencyTableViewCell: UITableViewCell {
     }
     
     private func updateUI() {
-        if let currency = currency {
-            codeLabel.text = currency.code
-            convertedValueLabel.text = currency.convertedValue?.description
-            nameLabel.text = currency.name
-            valueLabel.text = currency.value.description
-            if let urlImage = currency.image {
-                fetchImage(flag: urlImage)
-            }
+        guard let currency = currency  else { return }
+        codeLabel.text = currency.code
+        convertedValueLabel.text = currency.convertedValue?.description
+        nameLabel.text = currency.name
+        valueLabel.text = currency.value.description
+        if let imageCode = currency.image {
+            self.flagImageView.downloadFlag(from: imageCode)
         }
     }
+}
+
+@IBDesignable
+extension UIView {
     
-    private func fetchImage(flag: String) {
-        let countryFlagApi = CountryFlagsAPI()
-        countryFlagApi.request(for: flag, completionHandler: { data, response, error in
-            guard let data = data, error == nil else { return }
-            DispatchQueue.main.async() {
-                self.flagImageView.image = UIImage(data: data)
-            }
-        })
+    @IBInspectable
+    var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
+        }
     }
-    
 }

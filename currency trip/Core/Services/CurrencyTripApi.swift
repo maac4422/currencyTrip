@@ -30,7 +30,7 @@ class CurrencyTripAPI: ICurrencyTripAPI {
     private (set) var baseMethod = "GET"
     private (set) var basePort = 3000
     private (set) var baseScheme = "http"
-    private (set) var baseUrl = "currencies"
+    private (set) var baseUrl = "/currencies"
     
     func fetchCurrencies(completion: @escaping (Currency.Fetch.State) -> ()) {
 
@@ -46,8 +46,7 @@ class CurrencyTripAPI: ICurrencyTripAPI {
         let session = URLSession(configuration: .default)
         let dataTask = session.dataTask(with: urlRequest) { data, response, error in
             guard error == nil else {
-                completion(.error("ErrorData".localizedCapitalized))
-                print(error?.localizedDescription ?? "Unknowed error")
+                completion(.error(error?.localizedDescription ?? "ErrorData".localizedCapitalized))
                 return
             }
             guard response != nil else { return }

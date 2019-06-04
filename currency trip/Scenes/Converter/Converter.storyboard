@@ -19,96 +19,82 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="104" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oix-1Q-kBo" userLabel="Currencies Table View">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="74" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oix-1Q-kBo" userLabel="Currencies Table View">
                                 <rect key="frame" x="0.0" y="29" width="375" height="638"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" name="BaseFontColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CurrencyTableViewCell" rowHeight="104" id="VE6-gh-9qU" userLabel="CurrenciesTableViewCell" customClass="CurrencyTableViewCell" customModule="currency_trip" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="104"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CurrencyTableViewCell" rowHeight="82" id="VE6-gh-9qU" userLabel="CurrenciesTableViewCell" customClass="CurrencyTableViewCell" customModule="currency_trip" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="82"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VE6-gh-9qU" id="Oy8-Gz-Okr">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="81.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PA8-o7-355" userLabel="Code Label">
-                                                    <rect key="frame" x="83" y="6" width="105" height="45.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" name="BaseFontColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Converted Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uof-xZ-yoH" userLabel="Converted Value Label">
-                                                    <rect key="frame" x="204" y="55" width="165" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" name="BaseFontColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name large" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gs1-UC-PzH" userLabel="Name Label">
-                                                    <rect key="frame" x="78" y="55.5" width="105" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" name="BaseFontColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3j-TE-w9P" userLabel="Value Label">
-                                                    <rect key="frame" x="204" y="6" width="165" height="45.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" name="BaseFontColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Und-UO-xGI" userLabel="Flag Image">
-                                                    <rect key="frame" x="15" y="24.5" width="55" height="55"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PA8-o7-355" userLabel="Code Label">
+                                                    <rect key="frame" x="82" y="20" width="72" height="20.5"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" secondItem="Und-UO-xGI" secondAttribute="height" multiplier="1:1" id="oud-FZ-TU5"/>
+                                                        <constraint firstAttribute="width" constant="72" id="EHQ-W8-VaQ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" name="BaseFontColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Converted Value" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uof-xZ-yoH" userLabel="Converted Value Label">
+                                                    <rect key="frame" x="226" y="44" width="126.5" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" name="BaseFontColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name large" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Gs1-UC-PzH" userLabel="Name Label">
+                                                    <rect key="frame" x="83" y="44.5" width="143" height="20.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="143" id="ncG-tN-aVh"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" name="BaseFontColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Und-UO-xGI" userLabel="Flag Image">
+                                                    <rect key="frame" x="14" y="24" width="38" height="33.5"/>
+                                                    <color key="tintColor" name="BaseFontColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="38" id="G9d-FU-zyK"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                             <real key="value" value="115"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                                            <real key="value" value="0.5"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                                            <real key="value" value="10"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                                            <size key="value" width="0.0" height="0.0"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Value" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xta-PJ-FYw" userLabel="Value Label">
+                                                    <rect key="frame" x="152" y="16" width="200" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" name="BaseFontColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" name="BaseColor"/>
                                             <color key="tintColor" name="BaseColor"/>
                                             <constraints>
-                                                <constraint firstItem="PA8-o7-355" firstAttribute="leading" secondItem="Oy8-Gz-Okr" secondAttribute="leading" constant="83" id="0Xe-4N-WDI"/>
-                                                <constraint firstItem="Gs1-UC-PzH" firstAttribute="leading" secondItem="Und-UO-xGI" secondAttribute="trailing" constant="8" id="0yb-9q-k9U"/>
-                                                <constraint firstItem="PA8-o7-355" firstAttribute="baseline" secondItem="K3j-TE-w9P" secondAttribute="baseline" id="2Wk-f9-I5c"/>
-                                                <constraint firstItem="K3j-TE-w9P" firstAttribute="leading" secondItem="PA8-o7-355" secondAttribute="trailing" constant="16" id="4FS-Ee-ryN"/>
-                                                <constraint firstItem="uof-xZ-yoH" firstAttribute="leading" secondItem="Gs1-UC-PzH" secondAttribute="trailing" constant="21" id="7hX-tu-umG"/>
-                                                <constraint firstItem="K3j-TE-w9P" firstAttribute="width" secondItem="uof-xZ-yoH" secondAttribute="width" id="QsB-cH-ika"/>
-                                                <constraint firstItem="Und-UO-xGI" firstAttribute="centerY" secondItem="Oy8-Gz-Okr" secondAttribute="centerY" id="Z2h-T4-aCc"/>
-                                                <constraint firstItem="Gs1-UC-PzH" firstAttribute="top" secondItem="PA8-o7-355" secondAttribute="bottom" constant="4" id="Z61-C7-Ab8"/>
-                                                <constraint firstItem="K3j-TE-w9P" firstAttribute="top" secondItem="Oy8-Gz-Okr" secondAttribute="top" constant="6" id="bAC-w1-Fei"/>
-                                                <constraint firstItem="PA8-o7-355" firstAttribute="width" secondItem="Und-UO-xGI" secondAttribute="height" multiplier="21:11" id="bHo-2i-rrZ"/>
-                                                <constraint firstItem="Und-UO-xGI" firstAttribute="leading" secondItem="Oy8-Gz-Okr" secondAttribute="leading" constant="15" id="ckl-uk-B3J"/>
-                                                <constraint firstAttribute="trailing" secondItem="K3j-TE-w9P" secondAttribute="trailing" constant="6" id="dea-cK-zFa"/>
-                                                <constraint firstItem="Und-UO-xGI" firstAttribute="centerY" secondItem="Oy8-Gz-Okr" secondAttribute="centerY" id="dfI-O4-swj"/>
-                                                <constraint firstAttribute="bottom" secondItem="uof-xZ-yoH" secondAttribute="bottom" constant="28.5" id="pEN-DX-zoG"/>
-                                                <constraint firstItem="PA8-o7-355" firstAttribute="firstBaseline" secondItem="K3j-TE-w9P" secondAttribute="firstBaseline" id="qIV-ra-s8W"/>
-                                                <constraint firstItem="Gs1-UC-PzH" firstAttribute="width" secondItem="PA8-o7-355" secondAttribute="width" id="s4g-Oq-QCp"/>
-                                                <constraint firstAttribute="trailing" secondItem="uof-xZ-yoH" secondAttribute="trailing" constant="6" id="vG6-LA-1pA"/>
-                                                <constraint firstItem="uof-xZ-yoH" firstAttribute="firstBaseline" secondItem="K3j-TE-w9P" secondAttribute="baseline" constant="24" symbolType="layoutAnchor" id="xKo-sZ-BWI"/>
-                                                <constraint firstItem="K3j-TE-w9P" firstAttribute="height" secondItem="uof-xZ-yoH" secondAttribute="height" constant="25" id="xQn-Pl-a2l"/>
+                                                <constraint firstItem="Und-UO-xGI" firstAttribute="centerY" secondItem="Oy8-Gz-Okr" secondAttribute="centerY" id="34a-0I-yci"/>
+                                                <constraint firstItem="PA8-o7-355" firstAttribute="leading" secondItem="Und-UO-xGI" secondAttribute="trailing" constant="30" id="6wN-md-Jkj"/>
+                                                <constraint firstItem="Gs1-UC-PzH" firstAttribute="top" secondItem="uof-xZ-yoH" secondAttribute="bottom" constant="-20.5" id="713-I8-GHb"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="uof-xZ-yoH" secondAttribute="trailing" constant="7.5" id="KSw-tH-4h2"/>
+                                                <constraint firstItem="Gs1-UC-PzH" firstAttribute="top" secondItem="PA8-o7-355" secondAttribute="bottom" constant="4" id="Pdy-h9-0sq"/>
+                                                <constraint firstItem="Und-UO-xGI" firstAttribute="leading" secondItem="Oy8-Gz-Okr" secondAttribute="leadingMargin" constant="-1" id="X5T-GB-Zxa"/>
+                                                <constraint firstItem="Gs1-UC-PzH" firstAttribute="leading" secondItem="Und-UO-xGI" secondAttribute="trailing" constant="31" id="ayA-jp-dcP"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Gs1-UC-PzH" secondAttribute="bottom" constant="6" id="mhP-Ul-qQi"/>
+                                                <constraint firstItem="Und-UO-xGI" firstAttribute="top" secondItem="Oy8-Gz-Okr" secondAttribute="topMargin" constant="13" id="q2F-Ot-gas"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="codeLabel" destination="PA8-o7-355" id="y6I-Od-F0I"/>
-                                            <outlet property="convertedValueLabel" destination="uof-xZ-yoH" id="bAv-lO-86G"/>
+                                            <outlet property="convertedValueLabel" destination="uof-xZ-yoH" id="aAN-ZX-hAD"/>
                                             <outlet property="flagImageView" destination="Und-UO-xGI" id="rmq-8p-NU6"/>
                                             <outlet property="nameLabel" destination="Gs1-UC-PzH" id="mbq-oY-HbJ"/>
-                                            <outlet property="valueLabel" destination="K3j-TE-w9P" id="GvN-pS-6Di"/>
+                                            <outlet property="valueLabel" destination="Xta-PJ-FYw" id="xN3-Zg-eD1"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -148,6 +134,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="flag" width="37.5" height="37.5"/>
         <namedColor name="BaseColor">
             <color red="0.25499999523162842" green="0.6119999885559082" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

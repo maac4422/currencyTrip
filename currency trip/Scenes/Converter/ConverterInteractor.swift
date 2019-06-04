@@ -52,7 +52,6 @@ extension ConverterInteractor: ConverterBusinessLogic {
         worker.fetchCurrencies(completion: { (result: Currency.Fetch.State) in
             switch result {
             case .success(response: let response):
-                print(response)
                 self.currencies = response
                 self.presenter?.presentCurrencies(viewModel: response)
             case .error(error: let message):
