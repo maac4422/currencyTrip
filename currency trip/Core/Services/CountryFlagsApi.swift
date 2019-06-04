@@ -51,7 +51,8 @@ class CountryFlagsAPI: ICountryFlagsAPI {
     
     func getUrlRequest(for flag: String) -> URLRequest? {
         let urlSepare = "/"
-        let urlImage = imageTheme.rawValue + urlSepare + String(imageSize.rawValue) + flag + imageFormat
+        var urlImage = urlSepare + flag + urlSepare +  imageTheme.rawValue
+        urlImage += urlSepare + String(imageSize.rawValue) + imageFormat
         print(urlImage)
         var components = URLComponents()
         components.scheme = baseScheme
@@ -78,16 +79,22 @@ extension UIImageView {
                 let mimeType = response?.mimeType, mimeType.hasPrefix("image"),
                 let data = data, error == nil,
                 let image = UIImage(data: data)
-                else { return }
+                else {
+                    self.image = #imageLiteral(resourceName: "flag.png")
+                    return
+            }
             DispatchQueue.main.async() {
                 self.image = image
             }
-            }.resume()
+        }.resume()
     }
     
     func downloadFlag(from code: String, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
         let countryFlagsApi = CountryFlagsAPI()
-        guard let urlRequest = countryFlagsApi.getUrlRequest(for: code) else { return }
+        guard let urlRequest = countryFlagsApi.getUrlRequest(for: code) else {
+            self.image = #imageLiteral(resourceName: "flag.png")
+            return
+        }
         download(from: urlRequest, contentMode: mode)
     }
 }
