@@ -1,14 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14256" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14243"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14219"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
     </dependencies>
     <scenes>
+        <!--Currency Detail Controller-->
+        <scene sceneID="W3s-va-6IC">
+            <objects>
+                <controller id="8hg-Z1-J65" customClass="CurrencyDetailController" customModule="currencyWatch_Extension">
+                    <items>
+                        <imageView width="60" alignment="left" id="iS0-yE-EZT"/>
+                        <label width="80" alignment="left" text="Label" id="5nS-Kz-vg2"/>
+                    </items>
+                    <connections>
+                        <outlet property="imageCoutry" destination="iS0-yE-EZT" id="3FU-TN-GV9"/>
+                        <outlet property="valueCurrency" destination="5nS-Kz-vg2" id="RBl-Gi-H2J"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="262" y="-125"/>
+        </scene>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="currencyWatch" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="Wjp-tr-KDf">
+                            <items>
+                                <tableRow identifier="ImageLabelRow" id="q5g-rF-CCd" customClass="ImageLabelRowController" customModule="currencyWatch_Extension">
+                                    <group key="rootItem" width="1" height="43" alignment="left" id="zyL-bg-MMv">
+                                        <items>
+                                            <imageView width="38" height="34" alignment="left" id="id4-hv-9bE"/>
+                                            <label width="73" height="23" alignment="left" text="Label" id="T5O-C5-h1o"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="image" destination="id4-hv-9bE" id="bno-tp-Lkb"/>
+                                        <outlet property="valueCurrency" destination="T5O-C5-h1o" id="PhN-6D-zcs"/>
+                                        <segue destination="8hg-Z1-J65" kind="push" identifier="cellSelected" id="1un-lX-hYT"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableCurrency" destination="Wjp-tr-KDf" id="k7d-SW-SO8"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
@@ -32,14 +75,14 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="currencyWatch" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="currencyWatch" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="345"/>
         </scene>

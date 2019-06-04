@@ -15,6 +15,9 @@
 		0A5BD6A622A5CA630039FD49 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5BD6A522A5CA630039FD49 /* NotificationController.swift */; };
 		0A5BD6A822A5CA640039FD49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A5BD6A722A5CA640039FD49 /* Assets.xcassets */; };
 		0A5BD6AD22A5CA640039FD49 /* currencyWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 0A5BD69022A5CA610039FD49 /* currencyWatch.app */; };
+		0A5BD6B722A6054D0039FD49 /* ImageLabelRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5BD6B622A6054D0039FD49 /* ImageLabelRowController.swift */; };
+		0A5BD6B922A60A4E0039FD49 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5BD6B822A60A4E0039FD49 /* Currency.swift */; };
+		0A5BD6BB22A60AC00039FD49 /* CurrencyDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5BD6BA22A60AC00039FD49 /* CurrencyDetailController.swift */; };
 		42B5D84A3488D6987A56F085 /* Pods_currency_trip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D00DCA3D1D84480CE892D7 /* Pods_currency_trip.framework */; };
 		8433A3EF22A455BD009FA888 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433A3EE22A455BD009FA888 /* AppDelegate.swift */; };
 		8433A3F322A455BD009FA888 /* CurrenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8433A3F222A455BD009FA888 /* CurrenciesViewController.swift */; };
@@ -107,6 +110,9 @@
 		0A5BD6A722A5CA640039FD49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A5BD6A922A5CA640039FD49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A5BD6AA22A5CA640039FD49 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		0A5BD6B622A6054D0039FD49 /* ImageLabelRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelRowController.swift; sourceTree = "<group>"; };
+		0A5BD6B822A60A4E0039FD49 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		0A5BD6BA22A60AC00039FD49 /* CurrencyDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailController.swift; sourceTree = "<group>"; };
 		52BAA97C11279656C92B0604 /* Pods-currency tripUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-currency tripUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-currency tripUITests/Pods-currency tripUITests.release.xcconfig"; sourceTree = "<group>"; };
 		60DAE54C621035E91A9A1D27 /* Pods_currency_tripTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_currency_tripTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7076CCFBB66002BEF59ACD5C /* Pods-currency trip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-currency trip.release.xcconfig"; path = "Pods/Target Support Files/Pods-currency trip/Pods-currency trip.release.xcconfig"; sourceTree = "<group>"; };
@@ -204,6 +210,9 @@
 				0A5BD6A722A5CA640039FD49 /* Assets.xcassets */,
 				0A5BD6A922A5CA640039FD49 /* Info.plist */,
 				0A5BD6AA22A5CA640039FD49 /* PushNotificationPayload.apns */,
+				0A5BD6B622A6054D0039FD49 /* ImageLabelRowController.swift */,
+				0A5BD6B822A60A4E0039FD49 /* Currency.swift */,
+				0A5BD6BA22A60AC00039FD49 /* CurrencyDetailController.swift */,
 			);
 			path = "currencyWatch Extension";
 			sourceTree = "<group>";
@@ -640,8 +649,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A5BD6A622A5CA630039FD49 /* NotificationController.swift in Sources */,
+				0A5BD6BB22A60AC00039FD49 /* CurrencyDetailController.swift in Sources */,
+				0A5BD6B922A60A4E0039FD49 /* Currency.swift in Sources */,
 				0A5BD6A422A5CA630039FD49 /* ExtensionDelegate.swift in Sources */,
 				0A5BD6A222A5CA630039FD49 /* InterfaceController.swift in Sources */,
+				0A5BD6B722A6054D0039FD49 /* ImageLabelRowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
